@@ -1,0 +1,11 @@
+name: google-maps-utils
+channels:
+  - conda-forge
+dependencies:
+  - mercantile=1.2.1=pyhd8ed1ab_0
+  - numpy=1.21.3=py38he2449b9_0
+  - pillow=8.3.2=py38h8e6f84c_0
+  - rasterio=1.2.10=py38hfd64e68_0
+  - requests=2.26.0=pyhd8ed1ab_0
+  - shapely=1.7.1=py38hb7fe4a8_5
+  - tqdm=4.62.3=pyhd8ed1ab_0
