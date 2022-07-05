@@ -52,8 +52,8 @@ def calc_num_samples_per_city_and_class(data):
     :return: 1. a list of all city names, 2. a list of all classes, 3. the designated number of
     """
     # Count the number of cities and classes
-    class_count = data.groupby("mapped_class").nunique()
-    city_count = data.groupby("name").nunique()
+    class_count = data.groupby("class").nunique()
+    city_count = data.groupby("city").nunique()
     logging.debug(f"Found {city_count} cities")
     # Get the class with the lowest number of building samples
     min_class, min_samples = class_count["building_id"].idxmin(),  class_count["building_id"].min()
@@ -79,8 +79,8 @@ def random_city_split(data, city, clazz, desired_num_samples_per_city_and_class)
     3. number of samples missing for the city and the class
     """
     # Select the subset for city and class
-    city_class_subset = data[data["name"] == city]
-    city_class_subset = city_class_subset[city_class_subset["mapped_class"] == clazz]
+    city_class_subset = data[data["city"] == city]
+    city_class_subset = city_class_subset[city_class_subset["class"] == clazz]
     # Perform random shuffling
     city_class_subset = city_class_subset.sample(frac=1.0, random_state=SEED)
     num_city_class_samples = city_class_subset.shape[0]
@@ -104,11 +104,12 @@ def main():
     # Read the command line arguments
     args = parse_args()
     # Read the buildings.csv.bz2
+    logging.info(f"Reading {args.input_csv_bz2} ...")
     data = pd.read_csv(args.input_csv_bz2)
-    logging.info(f"Read {args.input_csv_bz2} with {data.shape[0]:,} rows")
+    logging.info(f"Read {args.input_csv_bz2} with {data.shape[0]:,} buildings")
     # Make sure that each building is only once in the dataset
     data.drop_duplicates(subset="building_id", inplace=True)
-    logging.info(f"Deduplication yielded {data.shape[0]:,} rows")
+    logging.info(f"Deduplication yielded {data.shape[0]:,} buildings")
     # Calculate the statistics including the desired number of samples per city and class
     cities, classes, num_samples_per_city = calc_num_samples_per_city_and_class(data)
     logging.info(f"Need {num_samples_per_city:,} samples per city and class")
