@@ -5,6 +5,8 @@ A large-scale dataset for building type classification using social media and ae
 
 ### Balancing
 
+![balancing algorithm pseudo code](figures/balancing_algorithm.png)
+
 
 ### Download
 
