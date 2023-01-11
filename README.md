@@ -326,19 +326,5 @@ Available at _TBA_
 
 BibTeX:
 ```commandline
-@article{hoffmann_2019,
-  author         = {Hoffmann, Eike Jens and Wang, Yuanyuan and Werner, Martin and Kang, Jian and Zhu, Xiao Xiang},
-  title          = {Model {Fusion} for {Building} {Type} {Classification} from {Aerial} and {Street} {View} {Images}},
-  journal        = {Remote Sensing},
-  volume         = {11},
-  year           = {2019},
-  number         = {11},
-  article-number = {1259},
-  url            = {https://www.mdpi.com/2072-4292/11/11/1259},
-  issn           = {2072-4292},
-  doi            = {10.3390/rs11111259}
-}
-
-
-insert_bibtex_here
+insert_paper_bibtex_here
 ```
