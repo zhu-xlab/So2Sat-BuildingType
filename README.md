@@ -5,7 +5,16 @@ A large-scale dataset for building type classification using social media and ae
 
 ### Balancing
 
+In this section the balancing algorithm discussed in section 5.1 in our paper is shown with greater detail.
+
 ![balancing algorithm pseudo code](figures/balancing_algorithm.png)
+
+Figure \ref{fig:balancing_dataset} depicts the distribution of the labeled buildings before and after balancing, where the balancing algorithm down-sample the \emph{residential} and \emph{commercial} classes to meet the number of buildings in the \emph{other} class.
+
+
+Figure \ref{fig:same_dist_dataset} shows that Algorithm \ref{alg:balancing} mostly (except for 1 or 2 cities) preserves the city-wise distribution of buildings for each class. For example, assume the *commercial* class, if city1 has more buildings than city2 before balancing, it would keep that after balancing. What is changed is that the numeric gaps between the less and over represented cities become smaller.
+
+
 
 
 ### Download
@@ -29,7 +38,7 @@ The dataset is split into two parts with different licenses
 - ``undersample.py`` performs two-dimensional undersampling as described in the paper
 - ``split_train_test.py`` splits the imbalanced and balanced buildings.csv.bz2 into a training and test part
 
-## Appendix
+## Appendix of the paper
 
 ### Baseline Results
 
@@ -73,7 +82,6 @@ results. Instead, datasets with a relatively small $\alpha$ value, e.g.
 $\alpha = 3$, can outperform the largest dataset, e.g. $\alpha = 41$.
 
 | $\alpha$ | Overall  Accuracy | $\kappa$  | Precision | Recall   | F1       |
-| -------- | ----------------- | --------- | --------- | -------- | -------- |
 | 41       | 0.49              | 0.214     | 0.54      | 0.47     | 0.40     |
 | 12       | 0.50              | 0.229     | 0.59      | 0.48     | 0.42     |
 | 9        | 0.50              | 0.225     | **0.60**  | 0.48     | 0.42     |
