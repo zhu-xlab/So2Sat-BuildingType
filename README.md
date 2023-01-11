@@ -119,7 +119,7 @@ about the residential tweets, and most probably it classes them as
 commercial. The main cause of this behaviour is the mixed-use buildings.
 
 |          |          | *commercial* |          |          | *other*  |          |          | *residential* |          |
-| -------- | -------- | ------------ | -------- | -------- | -------- | -------- | -------- | ------------- | -------- |
+| ---      | ---      | ------------ | ---      | ---      | -------- | ---      | ---      | ---           | ---      |
 | $\alpha$ | P        | R            | F1       | P        | R        | F1       | P        | R             | F1       |
 | ---      | ---      | ---          | ---      | ---      | ---      | ---      | ---      | ---           | ---      |
 | 41       | 0.47     | 0.72         | 0.57     | 0.51     | **0.67** | **0.58** | 0.64     | 0.02          | 0.03     |
