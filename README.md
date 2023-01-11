@@ -303,15 +303,14 @@ classifier.
 
 ![Aerial + Text](figures/cm_fusion_alpha_3.png)
 
-|          | Aerial | Flickr |        | Metadata |        | Text  |        |
-| -------- | ------ | ------ | ------ | -------- | ------ | ----- | ------ |
-|          | VHR    | FL     | Fusion | M        | Fusion | T     | Fusion |
-| ---      | ---    | ---    | ---    | ---      | ---    | ---   | ---    |
-| C        | 0.75   | 0.48   | 0.64   | 0.56     | 0.71   | 0.57  | 0.77   |
-| O        | 0.67   | 0.43   | 0.71   | 0.48     | 0.64   | 0.56  | 0.70   |
-| R        | 0.81   | 0.34   | 0.59   | 0.53     | 0.76   | 0.39  | 0.81   |
-| OA       | 0.75   | 0.42   | 0.67   | 0.53     | 0.71   | 0.53  | 0.76   |
-| $\kappa$ | 0.622  | 0.166  | 0.458  | 0.284    | 0.553  | 0.275 | 0.635  |
+|                  | Aerial   | Flickr   |          | Metadata   |          | Text    |          |
+| :--------        | :------: | :------: | :------: | :--------: | :------: | :-----: | :------: |
+|                  |          |          | Fusion   |            | Fusion   |         | Fusion   |
+| commercial       | 0.75     | 0.48     | 0.64     | 0.56       | 0.71     | 0.57    | 0.77     |
+| other            | 0.67     | 0.43     | 0.71     | 0.48       | 0.64     | 0.56    | 0.70     |
+| residential      | 0.81     | 0.34     | 0.59     | 0.53       | 0.76     | 0.39    | 0.81     |
+| Overall Accuracy | 0.75     | 0.42     | 0.67     | 0.53       | 0.71     | 0.53    | 0.76     |
+| $\kappa$         | 0.622    | 0.166    | 0.458    | 0.284      | 0.553    | 0.275   | 0.635    |
 
 *Table 4: Building-wise fusion results. VHR=Very high-resolution images (Google aerial images), FL=Flickr, M=Metadata, T=Text, F=Fusion, and OA=Overall Accuracy. The text results (T) refer to the results achieved for $\alpha=3$. All results are building-wise and represented by F1 score. C=Commercial, O=Other, R=Residential.*
 
