@@ -119,7 +119,7 @@ about the residential tweets, and most probably it classes them as
 commercial. The main cause of this behaviour is the mixed-use buildings.
 
 |          |          | *commercial*   |          |          | *other*  |          |          | *residential* |          |
-| ---      | ---      | :------------: | :---:      | :---:      | :--------: | :---:      | :---:     | :---:           | :---:      |
+| :---:      | ---      | :------------: | :---:      | :---:      | :--------: | :---:      | :---:     | :---:           | :---:      |
 | $\alpha$ | P        | R              | F1       | P        | R        | F1       | P        | R             | F1       |
 | 41       | 0.47     | 0.72           | 0.57     | 0.51     | **0.67** | **0.58** | 0.64     | 0.02          | 0.03     |
 | 12       | 0.47     | **0.78**       | **0.58** | **0.55** | 0.61     | **0.58** | 0.76     | 0.05          | 0.09     |
@@ -149,14 +149,14 @@ performance based on very high-resolution Google aerial images. Figure
 [13](#fig:aerial_cm){reference-type="ref" reference="fig:aerial_cm"}
 shows the confusion matrix of the classifier. 
 
-|          |       | Aerial |      |       | Flickr |      |       | Metadata |      |
-| -------- | ----- | ------ | ---- | ----- | ------ | ---- | ----- | -------- | ---- |
-|          | P     | R      | F1   | P     | R      | F1   | P     | R        | F1   |
-| C        | 0.73  | 0.78   | 0.75 | 0.45  | 0.53   | 0.48 | 0.52  | 0.62     | 0.56 |
-| O        | 0.74  | 0.62   | 0.67 | 0.34  | 0.59   | 0.43 | 0.49  | 0.46     | 0.47 |
-| R        | 0.79  | 0.84   | 0.81 | 0.63  | 0.23   | 0.33 | 0.59  | 0.48     | 0.53 |
-| OA       | 0.75  |        |      |       | 0.42   |      | 0.53  |          |      |
-| $\kappa$ | 0.622 |        |      | 0.166 |        |      | 0.284 |          |      |
+|          |         | Aerial   |        |         | Flickr   |        |         | Metadata   |        |
+| -------- | :-----: | :------: | :----: | :-----: | :------: | :----: | :-----: | :--------: | :----: |
+|          | P       | R        | F1     | P       | R        | F1     | P       | R          | F1     |
+| C        | 0.73    | 0.78     | 0.75   | 0.45    | 0.53     | 0.48   | 0.52    | 0.62       | 0.56   |
+| O        | 0.74    | 0.62     | 0.67   | 0.34    | 0.59     | 0.43   | 0.49    | 0.46       | 0.47   |
+| R        | 0.79    | 0.84     | 0.81   | 0.63    | 0.23     | 0.33   | 0.59    | 0.48       | 0.53   |
+| OA       | 0.75    |          |        | 0.42    |          |        | 0.53    |            |        |
+| $\kappa$ | 0.622   |          |        | 0.166   |          |        | 0.284   |            |        |
 
 *Table 3: Building-wise classification results based on Google aerial images, Flickr images, and tweets metadata. C=Commercial, O=Other, R=Residential, P=Precision, R=Recall, F1=F1 score, OA=Overall Accuracy, and $\kappa$=Cohen's Kappa.*
 
