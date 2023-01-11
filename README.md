@@ -149,14 +149,14 @@ performance based on very high-resolution Google aerial images. Figure
 [13](#fig:aerial_cm){reference-type="ref" reference="fig:aerial_cm"}
 shows the confusion matrix of the classifier. 
 
-|          |         | Aerial   |        |         | Flickr   |        |         | Metadata   |        |
-| -------- | :-----: | :------: | :----: | :-----: | :------: | :----: | :-----: | :--------: | :----: |
-|          | P       | R        | F1     | P       | R        | F1     | P       | R          | F1     |
-| C        | 0.73    | 0.78     | 0.75   | 0.45    | 0.53     | 0.48   | 0.52    | 0.62       | 0.56   |
-| O        | 0.74    | 0.62     | 0.67   | 0.34    | 0.59     | 0.43   | 0.49    | 0.46       | 0.47   |
-| R        | 0.79    | 0.84     | 0.81   | 0.63    | 0.23     | 0.33   | 0.59    | 0.48       | 0.53   |
-| OA       | 0.75    |          |        | 0.42    |          |        | 0.53    |            |        |
-| $\kappa$ | 0.622   |          |        | 0.166   |          |        | 0.284   |            |        |
+|                  |         | Aerial   |        |         | Flickr   |        |         | Metadata   |        |
+| :--------        | :-----: | :------: | :----: | :-----: | :------: | :----: | :-----: | :--------: | :----: |
+|                  | P       | R        | F1     | P       | R        | F1     | P       | R          | F1     |
+| commercial       | 0.73    | 0.78     | 0.75   | 0.45    | 0.53     | 0.48   | 0.52    | 0.62       | 0.56   |
+| other            | 0.74    | 0.62     | 0.67   | 0.34    | 0.59     | 0.43   | 0.49    | 0.46       | 0.47   |
+| residential      | 0.79    | 0.84     | 0.81   | 0.63    | 0.23     | 0.33   | 0.59    | 0.48       | 0.53   |
+| Overall Accuracy | 0.75    |          |        | 0.42    |          |        | 0.53    |            |        |
+| $\kappa$         | 0.622   |          |        | 0.166   |          |        | 0.284   |            |        |
 
 *Table 3: Building-wise classification results based on Google aerial images, Flickr images, and tweets metadata. C=Commercial, O=Other, R=Residential, P=Precision, R=Recall, F1=F1 score, OA=Overall Accuracy, and $\kappa$=Cohen's Kappa.*
 
