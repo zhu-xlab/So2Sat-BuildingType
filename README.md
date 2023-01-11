@@ -82,6 +82,7 @@ results. Instead, datasets with a relatively small $\alpha$ value, e.g.
 $\alpha = 3$, can outperform the largest dataset, e.g. $\alpha = 41$.
 
 | $\alpha$ | Overall  Accuracy | $\kappa$  | Precision | Recall   | F1       |
+| -------- | ----------------- | --------- | --------- | -------- | -------- |
 | 41       | 0.49              | 0.214     | 0.54      | 0.47     | 0.40     |
 | 12       | 0.50              | 0.229     | 0.59      | 0.48     | 0.42     |
 | 9        | 0.50              | 0.225     | **0.60**  | 0.48     | 0.42     |
