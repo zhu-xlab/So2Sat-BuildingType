@@ -161,12 +161,10 @@ $\alpha = 3$, can outperform the largest dataset, e.g. $\alpha = 41$.
 Table 2 shows the class-wise results. It
 can be noticed that over-represented classes, i.e. commercial and other,
 achieve higher scores with larger datasets, i.e., larger $\alpha$
-values. In contrast, the under-represented residential class (see figure
-[\[fig:class_dist_for_tweets_and_buildings\]](#fig:class_dist_for_tweets_and_buildings){reference-type="ref"
-reference="fig:class_dist_for_tweets_and_buildings"}) yields higher
+values. In contrast, the under-represented residential class (see figure 3 in the paper) yields higher
 scores when the datasets get less skewed. This trend is observable when
 the $\alpha$ value is decreasing. Recall and F1 scores are increasing
-for the residential class when $\alpha$ decreases. Figure
+for the residential class when $\alpha$ decreases. Figure [link](#confusion-matrices-with-respect-to-alpha)
 [\[fig:text_cm\]](#fig:text_cm){reference-type="ref"
 reference="fig:text_cm"} presents the confusion matrices of the
 text-based classifier. It shows that whatever the value of $\alpha$ is,
@@ -377,7 +375,7 @@ classifier.
 
 *Table 4: Building-wise fusion results. VHR=Very high-resolution images (Google aerial images). The text results refer to the results achieved for* $\alpha$*=3. All results are building-wise and represented by F1 score.*
 
-#### Confusion Matrices with respect to $\alpha$ 
+#### Confusion Matrices with respect to Alpha
 
 Confusion matrices of **text** based classifiers according to α values:
 
