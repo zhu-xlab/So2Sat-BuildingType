@@ -158,7 +158,7 @@ shows the confusion matrix of the classifier.
 | Overall Accuracy | 0.75    |          |        | 0.42    |          |        | 0.53    |            |        |
 | $\kappa$         | 0.622   |          |        | 0.166   |          |        | 0.284   |            |        |
 
-*Table 3: Building-wise classification results based on Google aerial images, Flickr images, and tweets metadata. C=Commercial, O=Other, R=Residential, P=Precision, R=Recall, F1=F1 score, OA=Overall Accuracy, and $\kappa$ = Cohen's Kappa.*
+*Table 3: Building-wise classification results based on Google aerial images, Flickr images, and tweets metadata. C=Commercial, O=Other, R=Residential, P=Precision, R=Recall, F1=F1 score, OA=Overall Accuracy, and * $\kappa$ *= Cohen's Kappa.*
 
 ### Flickr Images Based Building Classification
 
@@ -312,15 +312,9 @@ classifier.
 | Overall Accuracy | 0.75     | 0.42     | 0.67     | 0.53       | 0.71     | 0.53    | 0.76     |
 | $\kappa$         | 0.622    | 0.166    | 0.458    | 0.284      | 0.553    | 0.275   | 0.635    |
 
-*Table 4: Building-wise fusion results. VHR=Very high-resolution images (Google aerial images), FL=Flickr, M=Metadata, T=Text, F=Fusion, and OA=Overall Accuracy. The text results (T) refer to the results achieved for $\alpha=3$. All results are building-wise and represented by F1 score. C=Commercial, O=Other, R=Residential.*
+*Table 4: Building-wise fusion results. VHR=Very high-resolution images (Google aerial images). The text results refer to the results achieved for* $\alpha$*=3. All results are building-wise and represented by F1 score.*
 
-
-# References
-
-[literature.bib]
-
-
-## Paper
+## Citation
 
 Available at _TBA_
 
