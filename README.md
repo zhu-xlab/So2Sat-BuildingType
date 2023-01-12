@@ -261,7 +261,7 @@ classifier.
 Data fusion of two different modalities is a challenging task
 [(Schmitt & Zhu 2016)](https://ieeexplore.ieee.org/document/7740215). Especially when the two modalities are
 fundamentally different such as social media and remote sensing data
-[(Ghamisi et al. 2019)](https://ieeexplore.ieee.org/abstract/document/8672156). Hoffmann et al. [(Hoffmann et al. 2019)](https://www.mdpi.com/2072-4292/11/11/1259) and [Machado at al. 2020)](https://ieeexplore.ieee.org/document/9238485) show that the fusion of remote sensing and social media
+[(Ghamisi et al. 2019)](https://ieeexplore.ieee.org/abstract/document/8672156). Hoffmann et al. [(Hoffmann et al. 2019)](https://www.mdpi.com/2072-4292/11/11/1259) and [(Machado at al. 2020)](https://ieeexplore.ieee.org/document/9238485) show that the fusion of remote sensing and social media
 data/ground level images achieves good results when a decision fusion
 method is utilized. Therefore, the fusion of the social media and the
 remote sensing data is performed by a straightforward decision fusion
