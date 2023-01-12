@@ -201,11 +201,11 @@ commercial. The main cause of this behaviour is the mixed-use buildings.
 We use the balanced version of the dataset to fine-tune a VGG16
 architecture with ImageNet weights. For fine-tuning we apply a two step
 approach as in [Hoffmann et al. 2019](https://www.mdpi.com/2072-4292/11/11/1259). First, we add a new `softmax` layer for
-classification and train only this layer with a learning rate of 0.0001
+classification and train only this layer with a learning rate of $0.0001$
 for 16 epochs. Afterward, we restore the weights that gained the lowest
 validation loss during all epochs and continue training to adjust all
 layers to the aerial imagery. In this second step, we decrease the
-learning rate to 0.00004, train again for 16 epochs, and restore the
+learning rate to $0.00004$, train again for 16 epochs, and restore the
 weights yielding the lowest validation loss. These weights are defined
 to be the final model. Table [3](#tab:modalities){reference-type="ref"
 reference="tab:modalities"} ("Aerial" column) shows the classification
@@ -298,13 +298,13 @@ classifier.
 Social media images as a stand alone modality show mixed results (see
 Table [4](#tab:fusion){reference-type="ref" reference="tab:fusion"},
 "Flickr" column). Commercial buildings are predicted best with a F1
-score of 0.48. Second, there are other buildings with a F1 score of 0.43
-and finally, residential with 0.34 F1 score. This last result is close
+score of $0.48$. Second, there are other buildings with a F1 score of $0.43$
+and finally, residential with $0.34$ F1 score. This last result is close
 to a random classifier. However, in combination with aerial images it
-improves the results for the other class from 0.67 (aerial alone) to
-0.71 (aerial + Flickr), which is the best value for this class among all
+improves the results for the other class from $0.67$ (aerial alone) to
+$0.71$ (aerial + Flickr), which is the best value for this class among all
 modalities. As a drawback, the fusion decreases the classification
-performance for commercial and residential by 0.11 and 0.22 with respect
+performance for commercial and residential by $0.11$ and $0.22$ with respect
 to their performance using aerial images alone. However, the fusion
 performance is always better than the performance when using Flickr
 images alone. Figure
@@ -328,12 +328,12 @@ have apartments.
 ### Metadata Fusion Results
 
 The performance of the metadata classifier is on par with the text
-classifier. It yields an overall accuracy of 0.53, but has different
+classifier. It yields an overall accuracy of $0.53$, but has different
 strengths w.r.t. the text classifier (see Table
 [4](#tab:fusion){reference-type="ref" reference="tab:fusion"}). It is
 equally good for commercial and residential buildings with F1 scores of
-0.56 and 0.53. The gradient boosted tree model shows the worst result
-for other buildings (0.48 F1 score). However, none of these predictions
+$0.56$ and $0.53$. The gradient boosted tree model shows the worst result
+for other buildings $($0.48$ F1 score). However, none of these predictions
 improves the aerial image classifier in the fusion experiment. All
 metrics become worse compared to aerial only results indicating that
 both modalities are not complementary, but share the same weaknesses.
