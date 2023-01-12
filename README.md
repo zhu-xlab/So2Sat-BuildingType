@@ -71,6 +71,20 @@ The next table gives statistics about the distribution of tweets per building.
 *The minimum, maximum, median, mean average, variance, and standard deviation for the number of tweets per
 building. “All” refers to all buildings of all classes*
 
+| Data share (#buildings)      | min   | max       | median    | mean       | variance   | sd      |
+| :--------                    | :---: | :---:     | :---:     | :---:      |  :---:     | :---:   |
+| 0% (655,425)                 | 1     | 1,541,532 | 2         | 40.69 (41) | 6,513,908  | 2552.24 |
+| 1% (642,316)                 | 1     | 426       | 2         | 11.95 (12) | 1377.23    | 37.11   |
+| 2% (629,208)                 | 1     | 207       | 2         | 9.14 (9)   | 535.29     | 23.14   |
+| 5% (589,882)                 | 1     | 71        | 2         | 5.77 (6)   | 113.76     | 10.67   |
+| 10% (524,340)                | 1     | 27        | 2         | 3.72 (4)   | 24.45      | 4.94    |
+| 15% (458,798)                | 1     | 14        | 2         | 2.79 (3)   | 7.93       | 2.82    | 
+| 20% (393,255)                | 1     | 8         | 2         | 2.27 (2)   | 3.13       | 1.77    |
+| 25% (327,712)                | 1     | 5         | 2         | 1.94 (1)   | 1.40       | 1.18    |
+
+*The minimum, maximum, median, mean average, variance, and standard deviation for the number of tweets per
+building. In the last case, we put* α *= 1 instead of 2 to differentiate it from the previous case.*
+
 
 
 #### Flickr
