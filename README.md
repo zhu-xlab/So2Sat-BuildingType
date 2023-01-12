@@ -92,7 +92,7 @@ $\alpha = 3$, can outperform the largest dataset, e.g. $\alpha = 41$.
 | 2        | 0.52              | 0.271     | 0.55      | **0.51** | **0.51** |
 | 1        | 0.50              | 0.243     | 0.53      | 0.50     | 0.50     |
 
-*Table 1: Building-wise overall text-based classification results of monolingual text (only English tweets). $\kappa$ = Cohen's Kappa.*
+*Table 1: Building-wise overall text-based classification results of monolingual text (only English tweets).* $\kappa$ *= Cohen's Kappa.*
 
 Table 2 shows the class-wise results. It
 can be noticed that over-represented classes, i.e. commercial and other,
