@@ -88,7 +88,21 @@ building. In the last case, we put* α *= 1 instead of 2 to differentiate it fro
 
 
 #### Flickr
-bling bla
+The following table documents the single steps of the Flickr Filtering pipeline.
+
+| Filtering Step                                 | #Images    | Share of whole dataset |
+|:---------                                      |  :----:    | --------------:        |
+| Flickr images for 42 cities                    | 28,818,438 | 100.00%                |
+| Step 1: similarity filter                      | 1,635,592  | 5.67%                  |
+| Step 2: object detection filter                | 891,861    | 3.09%                  |
+| Step 3: automatic location tag                 | 457,669    | 1.59%                  |
+| Step 4: GPS direction available                | 88,593     | 0.31%                  |
+| Step 5: Labeled OSM building in line-of-sight  | 26,381     | 0.09%                  |
+
+*Number of Flickr images after each filtering step*
+
+
+
 
 ### Baseline Results
 
