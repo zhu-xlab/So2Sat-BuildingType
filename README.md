@@ -9,15 +9,10 @@ In this section the balancing algorithm discussed in section 5.1 in our paper is
 
 ![balancing algorithm pseudo code](figures/balancing_algorithm.png)
 
-Figure \ref{fig:balancing_dataset} depicts the distribution of the labeled buildings before and after balancing, where the balancing algorithm down-sample the *residential* and *commercial* classes to meet the number of buildings in the *other* class.
+The two figures below depict the distribution of the labeled buildings before (left) and after (right) balancing, where the balancing algorithm down-sample the *residential* and *commercial* classes to meet the number of buildings in the *other* class.
 
 ![Class-wise distribution of labeled buildings, (a) before balancing and (b) after balancing](figures/class_dist_for_buildings.png)
 ![Class-wise distribution of labeled buildings, (a) before balancing and (b) after balancing](figures/class_dist_for_buildings_balanced.png)
-
-
-Figure \ref{fig:same_dist_dataset} shows that Algorithm *1* mostly (except for 1 or 2 cities) preserves the city-wise distribution of buildings for each class. For example, assume the *commercial* class, if city1 has more buildings than city2 before balancing, it would keep that after balancing. What is changed is that the numeric gaps between the less and over represented cities become smaller.
-
-
 
 
 ### Download
