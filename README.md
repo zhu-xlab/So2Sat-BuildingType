@@ -247,7 +247,7 @@ the class that has the highest average value.
 The metadata features concatenate different types of data in one vector.
 Because of this heterogeneity, we choose a gradient boosted tree
 algorithm, XGBoost, to predict the building functions. For this baseline
-model, we use a learning rate of 0.1 and a maximum of 4096 trees with at
+model, we use a learning rate of $0.1$ and a maximum of 4096 trees with at
 most 11 levels. To ensure comparability across the results, the model
 was trained on the balanced version of the dataset. Table
 [3](#tab:modalities){reference-type="ref" reference="tab:modalities"}
@@ -277,11 +277,11 @@ modalities with remote sensing images.
 
 ### Aerial Results
 
-The aerial baseline model yields an overall accuracy of 0.75 (see Table
+The aerial baseline model yields an overall accuracy of $0.75$ (see Table
 [4](#tab:fusion){reference-type="ref" reference="tab:fusion"}, "Aerial"
 column). It is particularity strong on residential buildings with an F1
-score of 0.81. Commercial buildings are in between, while other
-buildings show the lowest F1 score of 0.67. A possible hypothesis for
+score of $0.81$. Commercial buildings are in between, while other
+buildings show the lowest F1 score of $0.67$. A possible hypothesis for
 this behavior is that especially single detached houses have green
 gardens around, which is a clear pattern. Other buildings can be
 landmark buildings or touristic hot spots, which are also clearly
@@ -333,7 +333,7 @@ strengths w.r.t. the text classifier (see Table
 [4](#tab:fusion){reference-type="ref" reference="tab:fusion"}). It is
 equally good for commercial and residential buildings with F1 scores of
 $0.56$ and $0.53$. The gradient boosted tree model shows the worst result
-for other buildings $($0.48$ F1 score). However, none of these predictions
+for other buildings ($0.48$ F1 score). However, none of these predictions
 improves the aerial image classifier in the fusion experiment. All
 metrics become worse compared to aerial only results indicating that
 both modalities are not complementary, but share the same weaknesses.
