@@ -380,6 +380,7 @@ classifier.
 
 #### Confusion Matrices with respect to $\alpha$ 
 
+Confusion matrices of **text** based classifiers according to α values:
 
 ![Confusion Matrices with respect to alpha](figures/confusions_alpha_full.png)
 
