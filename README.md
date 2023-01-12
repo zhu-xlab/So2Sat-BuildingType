@@ -220,14 +220,13 @@ shows the confusion matrix of the classifier.
 ### Flickr Images Based Building Classification
 
 We classify Flickr images using a fine-tuned model as described above in
-Section [1.2](#sec:results:aerial_imagery){reference-type="ref"
-reference="sec:results:aerial_imagery"}. However, instead of Google
+paragraph [Aerial Images Based Building Classification](#aerial-images-based-building-classification). However, instead of Google
 aerial images, the model is trained using a global sample of Google
-Street View data [(Hoffmann et al. 2023)](https://www.sciencedirect.com/science/article/pii/S0264275122005467). Table
-[3](#tab:modalities){reference-type="ref" reference="tab:modalities"}
-("Flickr" column) shows the classification performance based on Flickr
-images. Figure [14](#fig:flickr_cm){reference-type="ref"
-reference="fig:flickr_cm"} shows the confusion matrix of the classifier.
+Street View data [(Hoffmann et al. 2023)](https://www.sciencedirect.com/science/article/pii/S0264275122005467). Table 3 ("Flickr" column) shows the classification performance based on Flickr
+images. The subsequent figure shows the confusion matrix of the classifier.
+
+[Flickr images](figures/Flickr.jbz.png)
+
 Note that to classify a building with many Flickr images assigned, we
 first classify its Flickr images. Then, the final building label is
 identified by aggregating the classification output of the Flickr images
