@@ -200,7 +200,7 @@ commercial. The main cause of this behaviour is the mixed-use buildings.
 
 We use the balanced version of the dataset to fine-tune a VGG16
 architecture with ImageNet weights. For fine-tuning we apply a two step
-approach as in [@hoffmann_2019]. First, we add a new `softmax` layer for
+approach as in [Hoffmann et al. 2019](https://www.mdpi.com/2072-4292/11/11/1259). First, we add a new `softmax` layer for
 classification and train only this layer with a learning rate of 0.0001
 for 16 epochs. Afterward, we restore the weights that gained the lowest
 validation loss during all epochs and continue training to adjust all
