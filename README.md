@@ -18,7 +18,7 @@ The two figures below depict the distribution of the labeled buildings before (l
 ### Download
 
 The dataset is split into two parts with different licenses
-1. Building data and metadata feature vectors are available at [https://mediatum.ub.tum.de/1662350](https://mediatum.ub.tum.de/1662350) (ODbL)
+1. Building data and metadata feature vectors are available at [https://mediatum.ub.tum.de/1662350](https://mediatum.ub.tum.de/1662350&change_language=en) (ODbL)
 2. Twitter tweet IDs and Flickr image urls are available at [https://mediatum.ub.tum.de/1662351](https://mediatum.ub.tum.de/1662351) (CC BY-NC-SA)
 
 ### Details
