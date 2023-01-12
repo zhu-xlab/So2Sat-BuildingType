@@ -92,7 +92,7 @@ $\alpha = 3$, can outperform the largest dataset, e.g. $\alpha = 41$.
 | 2        | 0.52              | 0.271     | 0.55      | **0.51** | **0.51** |
 | 1        | 0.50              | 0.243     | 0.53      | 0.50     | 0.50     |
 
-*Table 1: Building-wise overall text-based classification results of monolingual text (only English tweets). $\kappa$=Cohen's Kappa.*
+*Table 1: Building-wise overall text-based classification results of monolingual text (only English tweets). $\kappa$ = Cohen's Kappa.*
 
 Table 2 shows the class-wise results. It
 can be noticed that over-represented classes, i.e. commercial and other,
@@ -158,7 +158,7 @@ shows the confusion matrix of the classifier.
 | Overall Accuracy | 0.75    |          |        | 0.42    |          |        | 0.53    |            |        |
 | $\kappa$         | 0.622   |          |        | 0.166   |          |        | 0.284   |            |        |
 
-*Table 3: Building-wise classification results based on Google aerial images, Flickr images, and tweets metadata. C=Commercial, O=Other, R=Residential, P=Precision, R=Recall, F1=F1 score, OA=Overall Accuracy, and $\kappa$=Cohen's Kappa.*
+*Table 3: Building-wise classification results based on Google aerial images, Flickr images, and tweets metadata. C=Commercial, O=Other, R=Residential, P=Precision, R=Recall, F1=F1 score, OA=Overall Accuracy, and $\kappa$ = Cohen's Kappa.*
 
 ### Flickr Images Based Building Classification
 
