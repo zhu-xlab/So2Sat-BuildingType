@@ -225,7 +225,7 @@ aerial images, the model is trained using a global sample of Google
 Street View data [(Hoffmann et al. 2023)](https://www.sciencedirect.com/science/article/pii/S0264275122005467). Table 3 ("Flickr" column) shows the classification performance based on Flickr
 images. The subsequent figure shows the confusion matrix of the classifier.
 
-[Flickr images](figures/Flickr.jbz.png)
+![Flickr images](figures/Flickr.jbz.png)
 
 Note that to classify a building with many Flickr images assigned, we
 first classify its Flickr images. Then, the final building label is
