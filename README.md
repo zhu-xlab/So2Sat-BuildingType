@@ -71,6 +71,9 @@ The next table gives statistics about the distribution of tweets per building.
 *The minimum, maximum, median, mean average, variance, and standard deviation for the number of tweets per
 building. “All” refers to all buildings of all classes*
 
+The following table depicts the main statistics about the number of tweets per building for: 0, 1, 2, 5, 10, 15, 20 and 25% excluding rate. Addionally, the table shows that by excluding more outlier values, we obtain more homogeneous dataset reflected through lower variance and standard deviation values:
+
+
 | Data share (#buildings)      | min   | max       | median    | mean       | variance   | sd      |
 | :--------                    | :---: | :---:     | :---:     | :---:      |  :---:     | :---:   |
 | 0% (655,425)                 | 1     | 1,541,532 | 2         | 40.69 (41) | 6,513,908  | 2552.24 |
