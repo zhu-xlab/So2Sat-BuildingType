@@ -42,9 +42,37 @@ In this section we provide subsequent statistics and baseline results achieved w
 ### Additional Dataset Statistics
 
 #### Twitter
+In this subsection we provide additional information about the Twitter modality. The table below shows the word count under
+consideration of the α value.
+
+| $\alpha$   | Number of unique words |
+| :--------: | -----------------:     |
+| 41         | 36,058                 |
+| 12         | 24,151                 |
+| 9          | 21,519                 | 
+| 6          | 18,006                 | 
+| 4          | 14,647                 |
+| 3          | 12,741                 |
+| 2          | 10,429                 |
+| 1          | 6,978                  |
+*Number of unique words in the textual corpus for each value of α, where α refers to the maximum number of
+tweets to consider per building*
+
+The next table gives statistics about the distribution of tweets per building.
+
+|              | min   | max       | median | mean   | variance   | sd      |
+| :--------    | :---: | :---:     | :---:  | :---:  |  :---:     | :---:   |
+| Commercial   |  1    | 584,296   |  4     | 66.99  | 4,975,237  | 2230.52 |
+| Residential  |  1    | 134,995   |  1     | 10.57  | 81,421.64  | 285.34  |
+| Other        |  1    | 1,541,532 |  4     | 133.49 | 39,229,660 | 6263.36 | 
+| All          |  1    | 1,541,532 |  2     | 40.69  | 6,513,908  | 2552.24 | 
+*The minimum, maximum, median, mean average, variance, and standard deviation for the number of tweets per
+building. “All” refers to all buildings of all classes*
+
+
+
+#### Flickr
 bling bla
-
-
 
 ### Baseline Results
 
