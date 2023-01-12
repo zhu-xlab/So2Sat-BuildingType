@@ -378,6 +378,14 @@ classifier.
 
 *Table 4: Building-wise fusion results. VHR=Very high-resolution images (Google aerial images). The text results refer to the results achieved for* $\alpha$*=3. All results are building-wise and represented by F1 score.*
 
+#### Confusion Matrices with respect to $\alpha$ 
+
+
+![Confusion Matrices with respect to alpha](figures/confusions_alpha_full.png)
+
+
+
+
 ## Citation
 
 Available at _TBA_
