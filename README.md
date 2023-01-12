@@ -102,8 +102,6 @@ The following table documents the single steps of the Flickr Filtering pipeline.
 *Number of Flickr images after each filtering step*
 
 
-
-
 ### Baseline Results
 
 The following sections document building function classification
@@ -161,7 +159,7 @@ $\alpha = 3$, can outperform the largest dataset, e.g. $\alpha = 41$.
 Table 2 shows the class-wise results. It
 can be noticed that over-represented classes, i.e. commercial and other,
 achieve higher scores with larger datasets, i.e., larger $\alpha$
-values. In contrast, the under-represented residential class (see figure 3 in the paper) yields higher
+values. In contrast, the under-represented residential class (see figure 3 in the paper, p.5) yields higher
 scores when the datasets get less skewed. This trend is observable when
 the $\alpha$ value is decreasing. Recall and F1 scores are increasing
 for the residential class when $\alpha$ decreases. See paragraph [Confusion Matrices with respect to Alpha](#confusion-matrices-with-respect-to-alpha)
@@ -200,11 +198,11 @@ validation loss during all epochs and continue training to adjust all
 layers to the aerial imagery. In this second step, we decrease the
 learning rate to $0.00004$, train again for 16 epochs, and restore the
 weights yielding the lowest validation loss. These weights are defined
-to be the final model. Table [3](#tab:modalities){reference-type="ref"
-reference="tab:modalities"} ("Aerial" column) shows the classification
-performance based on very high-resolution Google aerial images. Figure
-[13](#fig:aerial_cm){reference-type="ref" reference="fig:aerial_cm"}
-shows the confusion matrix of the classifier. 
+to be the final model. Table 3 ("Aerial" column) shows the classification
+performance based on very high-resolution Google aerial images. The follwing figure shows the confusion matrix of the classifier. 
+
+![Aerial images](figures/Aerial.jbz.png)
+
 
 |                  |         | Aerial   |        |         | Flickr   |        |         | Metadata   |        |
 | :--------        | :-----: | :------: | :----: | :-----: | :------: | :----: | :-----: | :--------: | :----: |
@@ -222,8 +220,7 @@ shows the confusion matrix of the classifier.
 We classify Flickr images using a fine-tuned model as described above in
 paragraph [Aerial Images Based Building Classification](#aerial-images-based-building-classification). However, instead of Google
 aerial images, the model is trained using a global sample of Google
-Street View data [(Hoffmann et al. 2023)](https://www.sciencedirect.com/science/article/pii/S0264275122005467). Table 3 ("Flickr" column) shows the classification performance based on Flickr
-images. The subsequent figure shows the confusion matrix of the classifier.
+Street View data [(Hoffmann et al. 2023)](https://www.sciencedirect.com/science/article/pii/S0264275122005467). Table 3 above ("Flickr" column) shows the classification performance based on Flickr images. The subsequent figure shows the confusion matrix of the classifier.
 
 ![Flickr images](figures/Flickr.jbz.png)
 
@@ -241,12 +238,10 @@ Because of this heterogeneity, we choose a gradient boosted tree
 algorithm, XGBoost, to predict the building functions. For this baseline
 model, we use a learning rate of $0.1$ and a maximum of 4096 trees with at
 most 11 levels. To ensure comparability across the results, the model
-was trained on the balanced version of the dataset. Table
-[3](#tab:modalities){reference-type="ref" reference="tab:modalities"}
-("Metadata" column) shows the classification performance based on tweets
-metadata features. Figure [15](#fig:metadata_cm){reference-type="ref"
-reference="fig:metadata_cm"} shows the confusion matrix of the
-classifier.
+was trained on the balanced version of the dataset. Table 3 ("Metadata" column) shows the classification performance based on tweets
+metadata features. The follwing figure shows the confusion matrix of the classifier.
+
+![Metadata](figures/Metadata.jbz.png)
 
 ### Fusion
 
@@ -269,8 +264,7 @@ modalities with remote sensing images.
 
 ### Aerial Results
 
-The aerial baseline model yields an overall accuracy of $0.75$ (see Table
-[4](#tab:fusion){reference-type="ref" reference="tab:fusion"}, "Aerial"
+The aerial baseline model yields an overall accuracy of $0.75$ (see Table 4, "Aerial"
 column). It is particularity strong on residential buildings with an F1
 score of $0.81$. Commercial buildings are in between, while other
 buildings show the lowest F1 score of $0.67$. A possible hypothesis for
@@ -288,8 +282,7 @@ classifier.
 ### Flickr Fusion Results
 
 Social media images as a stand alone modality show mixed results (see
-Table [4](#tab:fusion){reference-type="ref" reference="tab:fusion"},
-"Flickr" column). Commercial buildings are predicted best with a F1
+Table 4, "Flickr" column). Commercial buildings are predicted best with a F1
 score of $0.48$. Second, there are other buildings with a F1 score of $0.43$
 and finally, residential with $0.34$ F1 score. This last result is close
 to a random classifier. However, in combination with aerial images it
@@ -299,9 +292,7 @@ modalities. As a drawback, the fusion decreases the classification
 performance for commercial and residential by $0.11$ and $0.22$ with respect
 to their performance using aerial images alone. However, the fusion
 performance is always better than the performance when using Flickr
-images alone. Figure
-[2](#fig:aerial_flickr_fusion_cm){reference-type="ref"
-reference="fig:aerial_flickr_fusion_cm"} shows the confusion matrix of
+images alone. The following figure shows the confusion matrix of
 the fusion classifier.
 
 ![Aerial + Flickr](figures/Aerial-Flickr-Fusion.jbz.png)
@@ -321,8 +312,7 @@ have apartments.
 
 The performance of the metadata classifier is on par with the text
 classifier. It yields an overall accuracy of $0.53$, but has different
-strengths w.r.t. the text classifier (see Table
-[4](#tab:fusion){reference-type="ref" reference="tab:fusion"}). It is
+strengths w.r.t. the text classifier (see Table 4). It is
 equally good for commercial and residential buildings with F1 scores of
 $0.56$ and $0.53$. The gradient boosted tree model shows the worst result
 for other buildings ($0.48$ F1 score). However, none of these predictions
@@ -330,17 +320,14 @@ improves the aerial image classifier in the fusion experiment. All
 metrics become worse compared to aerial only results indicating that
 both modalities are not complementary, but share the same weaknesses.
 However, the fusion performance is always better than the performance
-when using metadata alone. Figure
-[3](#fig:aerial_metadata_cm){reference-type="ref"
-reference="fig:aerial_metadata_cm"} shows the confusion matrix of the
+when using metadata alone. The following figure shows the confusion matrix of the
 fusion classifier.
 
 ![Aerial + Metadata](figures/Aerial-Metadata-Fusion.jbz.png)
 
 ### Text Fusion Results
 
-The text fusion results documented in Table
-[4](#tab:fusion){reference-type="ref" reference="tab:fusion"} show
+The text fusion results documented in Table 4 show
 promising results. Even the modest Naïve Bayes baseline can improve the
 remote sensing image classification results. The commercial and other
 classes benefit from fusion, which is reflected by increased F1 scores.
@@ -352,8 +339,7 @@ the scores are not decreasing. A possible explanation could be that the
 strong remote sensing classification results for the residential class
 do not need additional ground data. In the case of fusing text and
 remote sensing data, the features of the two modalities seem to be
-complementary. Figure [4](#fig:aerial_text_cm){reference-type="ref"
-reference="fig:aerial_text_cm"} shows the confusion matrix of the fusion
+complementary. The following figure shows the confusion matrix of the fusion
 classifier.
 
 ![Aerial + Text](figures/cm_fusion_alpha_3.png)
