@@ -37,6 +37,14 @@ The dataset is split into two parts with different licenses
 - ``split_train_test.py`` splits the imbalanced and balanced buildings.csv.bz2 into a training and test part
 
 ## Appendix of the paper
+In this section we provide subsequent statistics and baseline results achieved with our proposed dataset.
+
+### Additional Dataset Statistics
+
+#### Twitter
+bling bla
+
+
 
 ### Baseline Results
 
