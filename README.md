@@ -230,7 +230,7 @@ We classify Flickr images using a fine-tuned model as described above in
 Section [1.2](#sec:results:aerial_imagery){reference-type="ref"
 reference="sec:results:aerial_imagery"}. However, instead of Google
 aerial images, the model is trained using a global sample of Google
-Street View data [@ejhx2022]. Table
+Street View data [Hoffmann et al. 2023](https://www.sciencedirect.com/science/article/pii/S0264275122005467). Table
 [3](#tab:modalities){reference-type="ref" reference="tab:modalities"}
 ("Flickr" column) shows the classification performance based on Flickr
 images. Figure [14](#fig:flickr_cm){reference-type="ref"
@@ -259,19 +259,18 @@ classifier.
 ### Fusion
 
 Data fusion of two different modalities is a challenging task
-[@Schmitt_Zhu_2016]. Especially when the two modalities are
+[Schmitt & Zhu 2016](https://ieeexplore.ieee.org/document/7740215). Especially when the two modalities are
 fundamentally different such as social media and remote sensing data
-[@ghamisi_2019]. Hoffmann et al. [@hoffmann_2019] and Machado at al.
-[@machado2020] show that the fusion of remote sensing and social media
+[Ghamisi et al. 2019](https://ieeexplore.ieee.org/abstract/document/8672156). Hoffmann et al. [Hoffmann et al. 2019](https://www.mdpi.com/2072-4292/11/11/1259) and [Machado at al. 2020](https://ieeexplore.ieee.org/document/9238485) show that the fusion of remote sensing and social media
 data/ground level images achieves good results when a decision fusion
 method is utilized. Therefore, the fusion of the social media and the
 remote sensing data is performed by a straightforward decision fusion
 method. It follows the decision-in-decision-out principle
-[@Dasarathy_1997] by averaging the softmax probability vectors of the
+[Dasarathy 1997](https://ieeexplore.ieee.org/document/554206) by averaging the softmax probability vectors of the
 social media and remote sensing image classification. A significant
 advantage of this fusion method is that one sensor source, e.g., social
 media, can back up the remote sensor if an image of a specific building
-is not available or is covered with clouds [@Dasarathy_1997]. A possible
+is not available or is covered with clouds [Dasarathy 1997](https://ieeexplore.ieee.org/document/554206). A possible
 disadvantage is that results can cancel each other out. The following
 sections give an overview of the fusion results of the different
 modalities with remote sensing images.
@@ -354,7 +353,7 @@ promising results. Even the modest Naïve Bayes baseline can improve the
 remote sensing image classification results. The commercial and other
 classes benefit from fusion, which is reflected by increased F1 scores.
 The reason could be that commercial and other structures share visual
-features [@cheng2018; @Albert_2017]. Here, the in situ sensors could add
+features [Cheng et al. 2018](https://ieeexplore.ieee.org/document/8252784) [Albert et al. 2017](http://doi.acm.org/10.1145/3097983.3098070). Here, the in situ sensors could add
 additional information and hence lift the classification results. In
 contrast, the residential class cannot gain any performance boost--yet
 the scores are not decreasing. A possible explanation could be that the
