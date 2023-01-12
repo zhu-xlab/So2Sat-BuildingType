@@ -164,9 +164,8 @@ achieve higher scores with larger datasets, i.e., larger $\alpha$
 values. In contrast, the under-represented residential class (see figure 3 in the paper) yields higher
 scores when the datasets get less skewed. This trend is observable when
 the $\alpha$ value is decreasing. Recall and F1 scores are increasing
-for the residential class when $\alpha$ decreases. Figure [link](#confusion-matrices-with-respect-to-alpha)
-[\[fig:text_cm\]](#fig:text_cm){reference-type="ref"
-reference="fig:text_cm"} presents the confusion matrices of the
+for the residential class when $\alpha$ decreases. See paragraph [Confusion Matrices with respect to Alpha](#confusion-matrices-with-respect-to-alpha)
+for the confusion matrices of the
 text-based classifier. It shows that whatever the value of $\alpha$ is,
 the commercial class is the easiest class to predict, and the other
 class is the second easiest class. However, residential is the hardest
@@ -174,11 +173,7 @@ class. This is partially due to the fact that most of the residential
 buildings have only one assigned tweet. Therefore, it is hard for the
 classifier to identify a clear pattern. It could also be due to the fact
 that people tend to tweet about so many diverse topics when they tweet
-from home. In addition, Figure
-[\[fig:text_cm\]](#fig:text_cm){reference-type="ref"
-reference="fig:text_cm"} shows that the classifier is highly confused
-about the residential tweets, and most probably it classes them as
-commercial. The main cause of this behaviour is the mixed-use buildings.
+from home. In addition, paragraph [Confusion Matrices with respect to Alpha](#confusion-matrices-with-respect-to-alpha) shows that the classifier is highly confused about the residential tweets, and most probably it classes them as commercial. The main cause of this behaviour is the mixed-use buildings.
 
 |          |          | *commercial*   |          |          | *other*  |          |          | *residential* |          |
 | :---:      | ---      | :------------: | :---:      | :---:      | :--------: | :---:      | :---:     | :---:           | :---:      |
