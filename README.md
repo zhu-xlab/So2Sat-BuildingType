@@ -168,10 +168,8 @@ values. In contrast, the under-represented residential class (see figure 3 in th
 scores when the datasets get less skewed. This trend is observable when
 the $\alpha$ value is decreasing. Recall and F1 scores are increasing
 for the residential class when $\alpha$ decreases. See paragraph [Confusion Matrices with respect to Alpha](#confusion-matrices-with-respect-to-alpha)
-for the confusion matrices of the
-text-based classifier. It shows that whatever the value of $\alpha$ is,
-the commercial class is the easiest class to predict, and the other
-class is the second easiest class. However, residential is the hardest
+for the confusion matrices of the text-based classifier. It shows that whatever the value of $\alpha$ is,
+the commercial class is the easiest class to predict, and the other class is the second easiest class. However, residential is the hardest
 class. This is partially due to the fact that most of the residential
 buildings have only one assigned tweet. Therefore, it is hard for the
 classifier to identify a clear pattern. It could also be due to the fact
